@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rate Card 2025 — eazzyou</title>
+<meta name="description" content="Jasa desain grafis eazzyou — poster, infografis, sosmed feed, K-pop freebies & more.">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --p50:  #F5F2FF;
+  --p100: #EAE4FF;
+  --p200: #CFC5FF;
+  --p400: #9D87F5;
+  --p600: #6B4FE8;
+  --p800: #3D2B9E;
+  --pk:   #F07AB6;
+  --pkl:  #FFE8F4;
+  --tx:   #18182A;
+  --txs:  #6B6B8A;
+  --bd:   #E6E0FF;
+  --bg:   #FDFCFF;
+  --white: #ffffff;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  background: var(--bg);
+  color: var(--tx);
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+.blob-wrap {
+  position: fixed; inset: 0; pointer-events: none; z-index: 0; overflow: hidden;
+}
+.blob {
+  position: absolute; border-radius: 50%; filter: blur(80px); opacity: .35;
+}
+.blob-1 { width: 500px; height: 500px; background: #C9BDFF; top: -120px; left: -100px; animation: drift1 18s ease-in-out infinite; }
+.blob-2 { width: 400px; height: 400px; background: #FFD6EE; bottom: 0; right: -80px; animation: drift2 22s ease-in-out infinite; }
+.blob-3 { width: 300px; height: 300px; background: #BFDBFF; top: 40%; left: 40%; animation: drift3 26s ease-in-out infinite; }
+
+@keyframes drift1 { 0%,100%{transform:translate(0,0)} 50%{transform:translate(40px,30px)} }
+@keyframes drift2 { 0%,100%{transform:translate(0,0)} 50%{transform:translate(-30px,-40px)} }
+@keyframes drift3 { 0%,100%{transform:translate(0,0)} 50%{transform:translate(20px,-20px)} }
+
+.nav {
+  position: sticky; top: 0; z-index: 100;
+  background: rgba(253,252,255,.85); backdrop-filter: blur(16px);
+  border-bottom: 1px solid var(--bd);
+  padding: 0 20px;
+}
+.nav-inner {
+  max-width: 760px; margin: 0 auto;
+  display: flex; align-items: center; justify-content: space-between;
+  height: 52px;
+}
+.nav-brand {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 22px; font-weight: 600; color: var(--p600);
+}
+.nav-links { display: flex; gap: 4px; }
+.nav-links a {
+  font-size: 12px; font-weight: 500; color: var(--txs);
+  text-decoration: none; padding: 5px 10px; border-radius: 20px;
+  transition: all .2s;
+}
+.nav-links a:hover { background: var(--p100); color: var(--p800); }
+
+.page {
+  max-width: 760px; margin: 0 auto;
+  padding: 0 20px 80px; position: relative; z-index: 1;
+}
+
+.header { text-align: center; padding: 64px 0 52px; }
+.header-pill {
+  display: inline-block;
+  background: var(--pkl); color: var(--pk);
+  font-size: 11px; font-weight: 600; letter-spacing: 1.5px;
+  text-transform: uppercase; padding: 5px 14px; border-radius: 20px;
+  margin-bottom: 20px;
+}
+.header h1 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(52px, 12vw, 76px);
+  font-weight: 600; line-height: .95;
+  color: var(--p800); letter-spacing: -2px;
+}
+.header h1 em { font-style: italic; color: var(--p600); }
+.header-sub {
+  margin-top: 16px; font-size: 14px; font-weight: 300;
+  color: var(--txs); letter-spacing: .5px;
+}
+.header-deco {
+  display: flex; align-items: center; justify-content: center; gap: 10px; margin-top: 28px;
+}
+.header-deco span { width: 48px; height: 1px; background: var(--p200); }
+.header-deco i { color: var(--pk); font-size: 16px; font-style: normal; }
+
+.section { margin-bottom: 40px; }
+.section-head { display: flex; align-items: center; gap: 12px; margin-bottom: 16px; }
+.section-head h2 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 22px; font-weight: 600; color: var(--p800); white-space: nowrap;
+}
+.section-head::after { content: ''; flex: 1; height: 1px; background: var(--bd); }
+
+.price-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+
+.pi {
+  background: var(--white); border: 1px solid var(--bd); border-radius: 12px;
+  padding: 12px 16px;
+  display: flex; align-items: center; justify-content: space-between; gap: 10px;
+  transition: border-color .2s, box-shadow .2s;
+}
+.pi:hover { border-color: var(--p400); box-shadow: 0 4px 16px rgba(107,79,232,.08); }
+.pi-label { font-size: 13px; font-weight: 400; color: var(--tx); }
+.pi-sub { font-size: 11px; color: var(--txs); margin-top: 2px; }
+.pi-price { font-size: 14px; font-weight: 600; color: var(--p600); white-space: nowrap; }
+
+.student-note {
+  display: inline-flex; align-items: center; gap: 6px;
+  background: var(--pkl); color: var(--pk);
+  font-size: 11px; font-weight: 600; letter-spacing: .5px;
+  padding: 5px 12px; border-radius: 20px; margin-bottom: 14px;
+}
+
+.paket-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
+.paket {
+  background: var(--white); border: 1px solid var(--bd); border-radius: 14px;
+  padding: 20px 16px; text-align: center;
+  transition: border-color .2s, box-shadow .2s; position: relative;
+}
+.paket:hover { border-color: var(--p400); box-shadow: 0 8px 24px rgba(107,79,232,.1); }
+.paket.hot {
+  border-color: var(--p400);
+  background: linear-gradient(160deg, var(--p50) 0%, var(--white) 100%);
+}
+.paket-badge {
+  position: absolute; top: -11px; left: 50%; transform: translateX(-50%);
+  background: var(--p600); color: white;
+  font-size: 10px; font-weight: 600; letter-spacing: 1px;
+  padding: 3px 12px; border-radius: 20px;
+}
+.paket-name {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 20px; font-weight: 600; color: var(--p800); margin-bottom: 10px;
+}
+.paket-feat { font-size: 12px; color: var(--txs); line-height: 2; margin-bottom: 16px; }
+.paket-feat strong { color: var(--tx); font-weight: 500; }
+.paket-price { font-size: 22px; font-weight: 600; color: var(--p600); font-family: 'Cormorant Garamond', serif; }
+
+.addon-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+.addon {
+  background: var(--p50); border: 1px solid var(--p100); border-radius: 12px;
+  padding: 12px 16px; display: flex; align-items: center; justify-content: space-between; gap: 10px;
+}
+.addon-lbl { font-size: 13px; color: var(--p800); }
+.addon-val { font-size: 13px; font-weight: 600; color: var(--p600); white-space: nowrap; }
+
+.tnc-card { background: var(--white); border: 1px solid var(--bd); border-radius: 14px; padding: 24px; }
+.tnc-intro { font-size: 13px; color: var(--txs); margin-bottom: 16px; line-height: 1.7; }
+.tnc-list { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+.tnc-list li { display: flex; gap: 10px; font-size: 13px; color: var(--tx); line-height: 1.65; }
+.tnc-list li .ico { flex-shrink: 0; font-size: 14px; margin-top: 1px; }
+.tnc-sign { text-align: center; margin-top: 20px; font-family: 'Cormorant Garamond', serif; font-size: 20px; font-style: italic; color: var(--pk); }
+
+.footer { text-align: center; padding-top: 32px; border-top: 1px solid var(--bd); margin-top: 8px; }
+.footer-brand { font-family: 'Cormorant Garamond', serif; font-size: 28px; font-weight: 600; color: var(--p600); }
+.footer-sub { font-size: 12px; color: var(--txs); margin-top: 6px; letter-spacing: .5px; }
+
+.fade { opacity: 0; transform: translateY(18px); transition: opacity .55s ease, transform .55s ease; }
+.fade.visible { opacity: 1; transform: none; }
+
+@media (max-width: 540px) {
+  .price-grid, .addon-grid { grid-template-columns: 1fr; }
+  .paket-grid { grid-template-columns: 1fr; }
+  .nav-links { display: none; }
+}
+</style>
+</head>
+<body>
+
+<div class="blob-wrap">
+  <div class="blob blob-1"></div>
+  <div class="blob blob-2"></div>
+  <div class="blob blob-3"></div>
+</div>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <div class="nav-brand">eazzyou</div>
+    <div class="nav-links">
+      <a href="#individu">Individu</a>
+      <a href="#student">Student</a>
+      <a href="#feed">Feed</a>
+      <a href="#kpop">K-pop</a>
+      <a href="#tnc">TnC</a>
+    </div>
+  </div>
+</nav>
+
+<div class="page">
+
+  <div class="header fade">
+    <div class="header-pill">Rate Card 2025</div>
+    <h1>eazzy<em>ou</em></h1>
+    <div class="header-sub">Graphic Design Service · Bogor</div>
+    <div class="header-deco"><span></span><i>✦</i><span></span></div>
+  </div>
+
+  <div class="section fade" id="individu">
+    <div class="section-head"><h2>Desain Individu</h2></div>
+    <div class="price-grid">
+      <div class="pi"><div><div class="pi-label">Twibbon</div></div><div class="pi-price">Rp 50.000</div></div>
+      <div class="pi"><div><div class="pi-label">Frame IG</div></div><div class="pi-price">Rp 50.000</div></div>
+      <div class="pi"><div><div class="pi-label">Post Story</div></div><div class="pi-price">Rp 55.000</div></div>
+      <div class="pi"><div><div class="pi-label">Postingan IG</div></div><div class="pi-price">Rp 65.000</div></div>
+      <div class="pi"><div><div class="pi-label">Poster Publik</div></div><div class="pi-price">Rp 75.000</div></div>
+      <div class="pi"><div><div class="pi-label">Poster UMKM</div></div><div class="pi-price">Rp 75.000</div></div>
+      <div class="pi"><div><div class="pi-label">Mindmap</div></div><div class="pi-price">Rp 75.000</div></div>
+      <div class="pi"><div><div class="pi-label">Pricelist Produk</div></div><div class="pi-price">Rp 85.000</div></div>
+      <div class="pi"><div><div class="pi-label">Poster Infografis</div></div><div class="pi-price">Rp 100.000</div></div>
+      <div class="pi"><div><div class="pi-label">Cover Buku</div></div><div class="pi-price">Rp 100.000</div></div>
+      <div class="pi"><div><div class="pi-label">Leaflet</div></div><div class="pi-price">Rp 110.000</div></div>
+      <div class="pi"><div><div class="pi-label">Carousel IG<div class="pi-sub">5 slide · +Rp 20.000/slide tambahan</div></div></div><div class="pi-price">Rp 125.000</div></div>
+      <div class="pi"><div><div class="pi-label">PowerPoint<div class="pi-sub">10 slide (include cover & penutup)</div></div></div><div class="pi-price">Rp 150.000</div></div>
+      <div class="pi"><div><div class="pi-label">Booklet<div class="pi-sub">min 8 hal · +Rp 25.000/hal tambahan</div></div></div><div class="pi-price">Rp 200.000</div></div>
+    </div>
+  </div>
+
+  <div class="section fade" id="student">
+    <div class="section-head"><h2>Student Price</h2></div>
+    <div class="student-note">✦ khusus pelajar & mahasiswa · diskon 20%</div>
+    <div class="price-grid">
+      <div class="pi"><div><div class="pi-label">Twibbon</div></div><div class="pi-price">Rp 40.000</div></div>
+      <div class="pi"><div><div class="pi-label">Frame IG</div></div><div class="pi-price">Rp 40.000</div></div>
+      <div class="pi"><div><div class="pi-label">Post Story</div></div><div class="pi-price">Rp 44.000</div></div>
+      <div class="pi"><div><div class="pi-label">Postingan IG</div></div><div class="pi-price">Rp 52.000</div></div>
+      <div class="pi"><div><div class="pi-label">Poster Publik</div></div><div class="pi-price">Rp 60.000</div></div>
+      <div class="pi"><div><div class="pi-label">Poster Produk</div></div><div class="pi-price">Rp 60.000</div></div>
+      <div class="pi"><div><div class="pi-label">Mindmap</div></div><div class="pi-price">Rp 60.000</div></div>
+      <div class="pi"><div><div class="pi-label">Pricelist Produk</div></div><div class="pi-price">Rp 68.000</div></div>
+      <div class="pi"><div><div class="pi-label">Poster Infografis</div></div><div class="pi-price">Rp 80.000</div></div>
+      <div class="pi"><div><div class="pi-label">PowerPoint Tugas<div class="pi-sub">10 slide</div></div></div><div class="pi-price">Rp 80.000</div></div>
+      <div class="pi"><div><div class="pi-label">Cover Buku</div></div><div class="pi-price">Rp 80.000</div></div>
+      <div class="pi"><div><div class="pi-label">Leaflet</div></div><div class="pi-price">Rp 88.000</div></div>
+      <div class="pi"><div><div class="pi-label">Carousel IG<div class="pi-sub">5 slide</div></div></div><div class="pi-price">Rp 100.000</div></div>
+      <div class="pi"><div><div class="pi-label">PowerPoint Seminar/Sidang<div class="pi-sub">10 slide</div></div></div><div class="pi-price">Rp 120.000</div></div>
+      <div class="pi"><div><div class="pi-label">Booklet<div class="pi-sub">min 8 hal</div></div></div><div class="pi-price">Rp 160.000</div></div>
+    </div>
+  </div>
+
+  <div class="section fade" id="feed">
+    <div class="section-head"><h2>Sosmed Feed Design</h2></div>
+    <div class="paket-grid">
+      <div class="paket">
+        <div class="paket-name">Starter</div>
+        <div class="paket-feat"><strong>3 template</strong><br>1x revisi<br>Link Canva ✦</div>
+        <div class="paket-price">Rp 255.000</div>
+      </div>
+      <div class="paket hot">
+        <div class="paket-badge">POPULER</div>
+        <div class="paket-name">Standard</div>
+        <div class="paket-feat"><strong>6 template</strong><br>2x revisi<br>Link Canva ✦</div>
+        <div class="paket-price">Rp 500.000</div>
+      </div>
+      <div class="paket">
+        <div class="paket-name">Premium</div>
+        <div class="paket-feat"><strong>9 template</strong><br>2x revisi<br>Link Canva ✦<br>Highlight cover ✦</div>
+        <div class="paket-price">Rp 720.000</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section fade" id="kpop">
+    <div class="section-head"><h2>K-pop Freebies</h2></div>
+    <div class="price-grid">
+      <div class="pi"><div><div class="pi-label">Photocard Border</div></div><div class="pi-price">Rp 25.000</div></div>
+      <div class="pi"><div><div class="pi-label">Photocard Holder</div></div><div class="pi-price">Rp 30.000</div></div>
+      <div class="pi"><div><div class="pi-label">Photostrip</div></div><div class="pi-price">Rp 30.000</div></div>
+      <div class="pi"><div><div class="pi-label">Bookmark</div></div><div class="pi-price">Rp 25.000</div></div>
+      <div class="pi"><div><div class="pi-label">Handfan</div></div><div class="pi-price">Rp 35.000</div></div>
+      <div class="pi"><div><div class="pi-label">Gantungan Kunci</div></div><div class="pi-price">Rp 30.000</div></div>
+      <div class="pi"><div><div class="pi-label">Poster Birthday Idol</div></div><div class="pi-price">Rp 55.000</div></div>
+      <div class="pi"><div><div class="pi-label">Poster GO</div></div><div class="pi-price">Rp 85.000</div></div>
+    </div>
+  </div>
+
+  <div class="section fade">
+    <div class="section-head"><h2>Add-ons</h2></div>
+    <div class="addon-grid">
+      <div class="addon"><span class="addon-lbl">Link Canva</span><span class="addon-val">+Rp 25.000</span></div>
+      <div class="addon"><span class="addon-lbl">In Rush (24 jam)</span><span class="addon-val">+50% harga</span></div>
+      <div class="addon"><span class="addon-lbl">Materi dari kami</span><span class="addon-val">+Rp 35.000</span></div>
+      <div class="addon"><span class="addon-lbl">Tidak dipublish</span><span class="addon-val">+Rp 10.000</span></div>
+    </div>
+  </div>
+
+  <div class="section fade" id="tnc">
+    <div class="section-head"><h2>Terms & Conditions</h2></div>
+    <div class="tnc-card">
+      <p class="tnc-intro">hai teman-teman, sebelum order jasa eazzyou, yuk baca TnC berikut ya 😺</p>
+      <ul class="tnc-list">
+        <li><span class="ico">🍄</span><span>Tidak menerima desain untuk keperluan lomba</span></li>
+        <li><span class="ico">🍄</span><span>Materi/konten dari customer, kami hanya desain. Butuh kami yang riset & siapkan materi +Rp 35.000</span></li>
+        <li><span class="ico">🍄</span><span>Jelaskan request sejelas mungkin, boleh sertakan referensi desain (bukan untuk dijiplak)</span></li>
+        <li><span class="ico">🍄</span><span>DP 50% sebelum pengerjaan, pelunasan setelah desain selesai</span></li>
+        <li><span class="ico">🍄</span><span>Revisi gratis 2x (ringan saja — tambah/hapus teks, tanpa ubah elemen, warna, atau layout). Revisi tambahan +Rp 15.000/sesi</span></li>
+        <li><span class="ico">🍄</span><span>Durasi pengerjaan 2–3 hari. In rush (24 jam) +50% dari total harga</span></li>
+        <li><span class="ico">🍄</span><span>Pembayaran via QRIS</span></li>
+        <li><span class="ico">🍄</span><span>File dikirim via Google Drive/Canva (PNG/PDF). Link Canva +Rp 25.000</span></li>
+        <li><span class="ico">🍄</span><span>Hasil desain dapat dijadikan portofolio eazzyou. Tidak mau dipublish? +Rp 10.000</span></li>
+        <li><span class="ico">🍄</span><span>Desain yang sudah dikirim tidak dapat direvisi kembali</span></li>
+      </ul>
+      <div class="tnc-sign">eazzyou♡</div>
+    </div>
+  </div>
+
+  <div class="footer fade">
+    <div class="footer-brand">eazzyou</div>
+    <div class="footer-sub">DM for order & info · @eazzyou · Rate Card 2025</div>
+  </div>
+
+</div>
+
+<script>
+  const obs = new IntersectionObserver(entries => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target); } });
+  }, { threshold: 0.1 });
+  document.querySelectorAll('.fade').forEach(el => obs.observe(el));
+</script>
+</body>
+</html>
