@@ -1,1 +1,1 @@
-# Eazzyou-Rate-Card
+index.html
